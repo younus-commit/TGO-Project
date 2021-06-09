@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [HC Suite]" parallel="tests">
+  <parameter name="browser" value="GC"/>
+  <test thread-count="2" name="GC Test(failed)" parallel="tests">
+    <classes>
+      <class name="com.opentext.cmd.scripts.ptscripts">
+        <methods>
+          <include name="suiteend"/>
+          <include name="suitestart"/>
+          <include name="afterMethod"/>
+          <include name="setup"/>
+          <include name="test_create_businessunit2"/>
+          <include name="test_create_businessunit1"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- com.opentext.cmd.scripts.ptscripts -->
+    </classes>
+  </test> <!-- GC Test(failed) -->
+</suite> <!-- Failed suite [HC Suite] -->

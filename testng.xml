@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="HC Suite" thread-count = "2" parallel= "tests">
+<parameter name="browser" value="GC"/>
+  <test  name="GC Test">
+    <classes>
+      <class name="com.opentext.cmd.scripts.ptscripts"/>
+    </classes>
+  </test> <!-- Test -->
+ <!--  <parameter name="browser" value="FF"/>
+  <test  name="FF Test">
+    <classes>
+      <class name="com.opentext.cmd.scripts.ptscripts"/>
+    </classes>
+  </test>  -->
+</suite> <!-- Suite -->
+

@@ -1,0 +1,3 @@
+Tgourl=https://qtg.qa.gxsonline.net
+user=snoushee@opentext.com
+pwd=Testing@323
