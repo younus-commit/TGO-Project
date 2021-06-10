@@ -2,16 +2,22 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [HC Suite]" parallel="tests">
   <parameter name="browser" value="GC"/>
-  <test thread-count="2" name="GC Test(failed)" parallel="tests">
+  <test name="GC Test(failed)" parallel="tests">
     <classes>
       <class name="com.opentext.cmd.scripts.ptscripts">
         <methods>
+          <include name="afterMethod"/>
           <include name="suiteend"/>
           <include name="suitestart"/>
-          <include name="afterMethod"/>
           <include name="setup"/>
           <include name="test_create_businessunit2"/>
           <include name="test_create_businessunit1"/>
+          <include name="test_create_businessunit4"/>
+          <include name="test_create_businessunit3"/>
+          <include name="test_create_businessunit6"/>
+          <include name="test_create_businessunit5"/>
+          <include name="test_create_businessunit8"/>
+          <include name="test_create_businessunit7"/>
           <include name="teardown"/>
         </methods>
       </class> <!-- com.opentext.cmd.scripts.ptscripts -->
